@@ -395,6 +395,18 @@ onfidoOut.setOptions({ isModalOpen:true });
 
 The new options will be shallowly merged with the previous one. So one can pass only the differences to a get a new flow.
 
+### Styling options
+
+#### font-size
+
+The Onfido SDK uses relative CSS units, so can be made to support different font-sizes by overriding the font-size of the root node (which has `font-size: 16px` by default)
+
+```css
+.onfido-sdk-ui-Modal-inner {
+  font-size: 1rem;
+}
+```
+
 ## Creating checks
 
 This SDK’s aim is to help with the document capture process. It does not actually perform the full document/face checks against our [API](https://documentation.onfido.com/).

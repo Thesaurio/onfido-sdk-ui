@@ -10,6 +10,7 @@ This project adheres to the Node [default version scheme](https://docs.npmjs.com
 ### Added
 - Public: Added Proof of address `poa` step where users can capture their proof of address documents. This is a beta feature.
 - Internal: Send camera and microphone labels to Onfido API as metadata
+- Public: Changed units to be `em`, allowing relative sizing of the SDK by changing the root node `font-size`
 
 ### Changed
 - Internal: Users using the cross device flow on desktop (instead of mobile) are now blocked from continuing

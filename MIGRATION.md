@@ -2,6 +2,25 @@
 
 These guides below are provided to ease the transition of existing applications using the Onfido SDK from one version to another that introduces breaking API changes.
 
+## `3.0.1` -> `3.1.0`
+
+- Set the CSS units used in the SDK to be relative (`em`) units. If you previously set the font-size of `.onfido-sdk-ui-Modal-inner`, then this will now scale all of the units in the SDK. If you want change the font-size of something specific, you will need to update your selector to be more specific.
+
+### Example of old behaviour
+
+```css
+.onfido-sdk-ui-Modal-inner {
+  font-size: 20px;
+}
+```
+
+### Example of new behaviour
+```css
+.a-more-specific-selector {
+  font-size: 20px;
+}
+```
+
 ## `2.8.0` -> `3.0.0`
 
 ### Breaking changes
